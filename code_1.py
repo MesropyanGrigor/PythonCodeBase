@@ -22,6 +22,7 @@ def plot_gaussian():
     x = np.concatenate((-1*x[1:][::-1], x), axis=0)
     print(f"X : {x}")
     y = gaussian(x)
+    print(type(y))
     print(f"Y : {y}")
     plt.plot(x, y)
     plt.title("Gaussian plot")
